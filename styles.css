@@ -33,6 +33,7 @@ header {
 	width: 100%;
 	background: rgb(244, 249, 243);
 	transition: 0.2s;
+  height: 50px;
 }
 
 .logo {
@@ -48,7 +49,7 @@ header {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
-	margin-top: 50px;
+	margin-top: 45px;
 	margin-bottom: 50px;
 	min-height: 50px;
 	padding-right: 50px;
@@ -118,6 +119,7 @@ aside .nav__item::-webkit-scrollbar {
 	background: url("./images/yoga-background-img.jpg");
 	font-size: 30px;
   margin-top: 4rem;
+  height: 100vh;
 }
 
 section.section__1,
