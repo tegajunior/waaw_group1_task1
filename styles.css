@@ -83,12 +83,6 @@ aside button {
 /* END OF HEADER STYLES */
 
 /* SECTION 1 STYLES */
-.container {
-	display: flex;
-	flex-direction: row-reverse;
-	height: calc(100vh - 70px);
-}
-
 aside {
 	/* display: none; */
 	background: rgb(228, 239, 233);
