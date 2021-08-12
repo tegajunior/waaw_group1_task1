@@ -243,7 +243,7 @@ section.section__1,
 }
 
 .section__4__pricingcard {
-    background-color: #fdfdfd;
+    background-color: #f4f9f3;
     border: 2px solid white;
     margin: 75px 20px 10px 20px;
     height: 70%;
@@ -252,19 +252,27 @@ section.section__1,
     width: 250px;
 }
 
+.title {
+    padding-top: 40px;
+}
+
 .section__4__pricingcard h3,
 .section__4__pricingcard p {
     color: #6c9994;
+}
+
+.section__4__pricingcard p {
+    margin-bottom: 25px;
 }
 
 .section__4__pricingcard button {
     background-color: #6c9994;
     border: none;
     color: #fdfdfd;
-    padding: 5px 15px;
+    padding: 10px 0;
     border-radius: 5px;
     text-transform: uppercase;
-    width: 70%;
+    width: 90%;
 }
 
 
@@ -284,6 +292,7 @@ section.section__1,
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #6c9994;
 }
 
 
