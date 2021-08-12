@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  h1,h2,h3,h4,h5,h6{
+  h1,h2,h3,h4,h5,h6,a{
     font-family: 'Baloo Da 2', cursive;
   }
   body {
@@ -84,12 +84,6 @@ aside button {
 /* END OF HEADER STYLES */
 
 /* SECTION 1 STYLES */
-/* .container {
-	display: flex;
-	flex-direction: row-reverse;
-	height: calc(100vh - 70px);
-} */
-
 aside {
 	/* display: none; */
 	background: rgb(228, 239, 233);
@@ -134,7 +128,7 @@ section.section__1,
 
 .landing__content h1 {
 	text-transform: uppercase;
-	font-family: "Baloo Thambi 2", cursive !important;
+	font-family: "Baloo Da 2", cursive !important;
 	letter-spacing: 0.2rem;
 	color: rgb(118, 159, 153);
 }
@@ -277,6 +271,71 @@ section.section__1,
 /* END OF SECTION 6 STYLES */
 
 /* FOOTER STYLES */
+
+  footer {
+    background-color: #F3F9F4;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+    width: 100%;
+  }
+  footer h4 {
+    color: #589C97;
+    margin-bottom: 12px;
+  }
+  #footer__section_1{
+    flex-basis: 400px;
+  }
+  .footer_body_text {
+    color: #8FBDBA;
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  .icon__text__container {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  .icon__text__container i {
+    padding-right: 4px;
+    font-size: 7px;
+  }
+  .sm-icon {
+    padding: 4px;
+    color: #fff;
+    background-color: #589C97;
+    border-radius: 100px;
+  }
+  .icon__text {
+    margin-left: 7px;
+    line-height: .8;
+  }
+  /* MEDIA QUERIES */
+  @media (max-width: 786px) {
+    #footer__section_1 {
+      flex-basis: 200px;
+    }
+  }
+
+  @media (max-width: 592px) {
+    #footer__section_1 {
+      flex-basis: 100vw;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    footer {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 347px) {
+   span.icon__text {
+     display: none;
+   }
+   #sm_header_hidden {
+     display: none;
+   }
+  }
 
 /* END FOOTER STYLES */
 
