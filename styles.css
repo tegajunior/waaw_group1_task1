@@ -84,11 +84,11 @@ aside button {
 /* END OF HEADER STYLES */
 
 /* SECTION 1 STYLES */
-.container {
+/* .container {
 	display: flex;
 	flex-direction: row-reverse;
 	height: calc(100vh - 70px);
-}
+} */
 
 aside {
 	/* display: none; */
@@ -257,14 +257,7 @@ section.section__1,
     position: relative;
     right: 30px;
   }
-/* END OF SECTION 6 STYLES */
-
-/* FOOTER STYLES */
-
-/* END FOOTER STYLES */
-/* MEDIA QUERIES */
-  /* MEDIA QUERIES FOR SECTION 6 */
-@media (max-width: 545px) {
+  @media (max-width: 545px) {
   .section__6__item .search__form {
     width: 100%;
     background: #fff;
@@ -281,3 +274,9 @@ section.section__1,
     padding-left: 14px;
   }
 }
+/* END OF SECTION 6 STYLES */
+
+/* FOOTER STYLES */
+
+/* END FOOTER STYLES */
+
