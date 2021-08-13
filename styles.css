@@ -135,13 +135,12 @@ section.section__1,
 
 .landing__content h1 {
 	text-transform: uppercase;
-	font-family: "Baloo Thambi 2", cursive !important;
+	/* font-family: "Baloo Da 2", cursive !important; */
 	font-size: 4rem;
 	font-weight: 900;
 	letter-spacing: 0.2rem;
 	color: rgb(118, 159, 153);
 }
-
 @media (max-width: 970px) {
 	.landing__content h1 {
 		font-size: 2rem;
@@ -173,7 +172,7 @@ section.section__1,
 }
 
 .landing__content button {
-	font-family: "Caveat", cursive !important;
+	font-family: "Baloo Da 2", cursive;
 	background-color: rgb(118, 159, 153);
 	color: rgb(245, 250, 244);
 	border: none;
