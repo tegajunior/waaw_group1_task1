@@ -26,6 +26,7 @@ body {
     font-family: "Arial", "sans-serif";
 }
 
+
 /* END OF DEFAULTS STYLES */
 
 /* HEADER STYLES*/
@@ -237,9 +238,7 @@ section.section__1,
 
 /* SECTION 2 STYLES */
 .section__2{
-  /* width: 100vw; */
   background-color: #6B9893;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,7 +251,6 @@ section.section__1,
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* border: 1px solid red; */
   margin: 30px auto 0px;
 }
 
@@ -261,7 +259,6 @@ section.section__1,
   font-weight: 800;
   font-size: 4.2em;
   letter-spacing: 1px;
-  /* font-family: 'Baloo Da 2', cursive; */
 }
 
 .section__2_texts p{
@@ -270,15 +267,19 @@ section.section__1,
   font-weight: 300;
   text-align: center;
   width: 50%;
-  /* border: 1px solid black; */
   letter-spacing: .5px;
   word-break: break-all;
+}
+
+.section__2_texts p span, .section__3_texts p span{
+  font-weight: 600;
+  font-style: italic;
 }
 .section__2_cards{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  /* border: 1px solid blue; */
+  margin: 1.2em auto;
 }
 
 .section__2_card{
@@ -286,7 +287,6 @@ section.section__1,
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid brown; */
 }
 
 .section__2_card img{
@@ -302,20 +302,20 @@ section.section__1,
 .section__2_card-text h3{
   color: white;
   font-size: 2.3em;
-  /* border: 1px solid red; */
   margin-top: -7px;
   margin-bottom: 10px;
 }
 
 .section__2_card-text p{
   color: white;
-  font-size: 1.4em;
+  font-size: 1.38em;
   font-weight: 400;
   text-align: center;
   width: 320px;
   word-break: break-all;
 }
 
+/* SECTION 2 MEDIA QUERIES */
 @media (max-width: 1245px) {
   .section__2_texts p{
     font-size: 1.5em;
@@ -330,7 +330,6 @@ section.section__1,
     font-size: 1.2em;
     width: 270px;
   }
-
 }
 
 @media (max-width: 1150px){
@@ -459,25 +458,15 @@ section.section__1,
     padding-bottom: 10px;
   }
 }
-.title {
-    padding-top: 40px;
-}
-
-.section__4__pricingcard h3,
-.section__4__pricingcard p {
-    color: #6c9994;
-}
 
 /* SECTION 3 STYLES */
 .section__3{
-  /* width: 100vw; */
   background: #F4F9F3;
   background-image: url("./images/landing-page-img.jpg");
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: -850px -600px;
   overflow: hidden;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -490,7 +479,6 @@ section.section__1,
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* border: 1px solid red; */
   margin: 30px auto 40px;
 }
 
@@ -499,8 +487,6 @@ section.section__1,
   font-weight: 900;
   font-size: 5em;
   letter-spacing: 1px;
-  /* font-family: 'Baloo Da 2', cursive; */
-  /* border: 1px solid greenyellow; */
 }
 
 .section__3_texts p{
@@ -509,7 +495,6 @@ section.section__1,
   font-weight: 300;
   text-align: center;
   width: 42%;
-  /* border: 1px solid black; */
   letter-spacing: 1px;
   word-break: break-all;
 }
@@ -517,12 +502,22 @@ section.section__1,
 .section__3_charts{
   display: flex;
   justify-content: space-evenly;
-  /* border: 1px solid grey; */
   width: 100%;
   margin: 70px auto;
-
 }
 
+.section__3_charts-contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__3_charts-contain p{
+  color: #6B9893;
+  font-size: 1.7em;
+  font-weight: 500;
+  margin-top: 1em;
+}
 .section__3_chart{
   border: 3px solid #6B9893;
   width: 17em;
@@ -538,6 +533,147 @@ section.section__1,
   font-size: 5em;
   color: #6B9893;
 }
+
+/* SECTION 3 MEDIA QUERIES */
+@media (max-width: 1245px) {
+  .section__3_texts p{
+    font-size: 1.5em;
+  }
+
+}
+
+@media (max-width: 1150px){
+  .section__3_texts h1{
+    font-size: 4.5em;
+  }
+  .section__3_texts p{
+    font-size: 1.3em;
+  }
+
+  .section__3_card-text p{
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  .section__3_chart{
+    width: 15em;
+    height: 15em;
+  }
+  .section__3_chart h1{
+    font-size: 4.5em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section__3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .section__3_texts h1{
+    font-size: 4em;
+  }
+  .section__3_texts p{
+    font-size: 1.1em;
+    margin-top: -10px;
+  }
+  .section__3_chart h1{
+    font-size: 4em;
+    transform: translateY(60%);
+  }
+
+}
+
+@media (max-width: 890px){
+  .section__3{
+    padding-top: -5px;
+    padding-bottom: -5px;
+  }
+  .section__3_texts h1{
+    font-size: 3.5em;
+  }
+  
+  .section__3_texts p{
+    width: 350px;
+    margin-bottom: 10px;
+  }
+
+.section__3_charts-contain p{
+  font-size: 1.5em;
+}
+  .section__3_chart{
+    width: 13em;
+    height: 13em;
+  }
+  .section__3_chart h1{
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 730px) {
+  .section__3_charts{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: -50px;
+  }
+  .section__3_texts h1{
+    padding-bottom: -5px;
+  }
+  .section__3_texts p{
+    width: 500px;
+    padding-top: -10px;
+  }
+
+  .section__3_charts-contain{
+    margin-top: 60px;
+  }
+
+  .section__3_charts-contain p{
+    margin-top: -90px;
+  }
+
+  .section__3_chart{
+    width: 17em;
+    height: 17em;
+    margin-bottom: 100px;
+  }
+  
+  .section__3_chart h1{ 
+    font-size: 4.3em;
+  } 
+  
+}
+
+@media (max-width: 600px) {
+  .section__3_texts p{
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__3_texts h1{
+    font-size: 2.8em;
+  }
+  .section__3_texts p{
+    font-size: 1em;
+    width: 320px;
+    padding-top: 5px;
+  }
+  .section__3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .section__3_chart{
+    width: 15em;
+    height: 15em;
+  }
+  
+  .section__3_chart h1{ 
+    font-size: 4.3em;
+  }
+}
+
+
 /* END OF SECTION 3 STYLES */
 .section__4__pricingcard p {
     margin-bottom: 25px;
@@ -553,7 +689,14 @@ section.section__1,
     width: 90%;
 }
 
+.title {
+  padding-top: 40px;
+}
 
+.section__4__pricingcard h3,
+.section__4__pricingcard p {
+  color: #6c9994;
+}
 /* END OF SECTION 4 STYLES */
 
 
